@@ -6,7 +6,7 @@ const libros = [
         autor: "Miguel de Cervantes",
         categoria: "Novela",
         anio: 1605,
-        imagen: "img/don_quijote.jpg",
+        imagen: "don_quijote.jpg",
         descripcion: "Cuenta las aventuras de Alonso Quijano, un hombre que se vuelve caballero andante para defender la justicia y vivir grandes aventuras."
     },
 
@@ -16,7 +16,7 @@ const libros = [
         autor: "J. K. Rowling",
         categoria: "Literatura",
         anio: 1997,
-        imagen: "img/harry_potter.jpg",
+        imagen: "harry_potter.jpg",
         descripcion: "Harry descubre que es un mago y comienza sus estudios en Hogwarts, donde conoce amigos, enemigos y secretos mágicos."
     },
 
@@ -26,7 +26,7 @@ const libros = [
         autor: "J. R. R. Tolkien",
         categoria: "Literatura",
         anio: 1937,
-        imagen: "img/hobbit.jpg",
+        imagen: "hobbit.jpg",
         descripcion: "Bilbo Bolsón emprende una aventura junto a un grupo de enanos para recuperar un tesoro custodiado por un poderoso dragón."
     },
 
@@ -36,7 +36,7 @@ const libros = [
         autor: "Antoine de Saint-Exupéry",
         categoria: "Literatura",
         anio: 1943,
-        imagen: "img/principito.jpg",
+        imagen: "principito.jpg",
         descripcion: "Un pequeño príncipe viaja por diferentes planetas aprendiendo valiosas lecciones sobre la amistad, el amor y la vida."
     },
 
@@ -46,7 +46,7 @@ const libros = [
         autor: "Varios Autores",
         categoria: "Historia",
         anio: 2020,
-        imagen: "img/historia_universal.jpg",
+        imagen: "historia_universal.jpg",
         descripcion: "Presenta los acontecimientos más importantes de la humanidad desde las primeras civilizaciones hasta la actualidad."
     },
 
@@ -56,7 +56,7 @@ const libros = [
         autor: "Gabriel García Márquez",
         categoria: "Novela",
         anio: 1967,
-        imagen: "img/cien_años.jpg",
+        imagen: "cien_años.jpg",
         descripcion: "Relata la historia de la familia Buendía durante varias generaciones en el pueblo ficticio de Macondo."
     }
 
