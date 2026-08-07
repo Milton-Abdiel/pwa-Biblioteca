@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>📚 Biblioteca Digital</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+    <link rel="manifest"
+          href="manifest.json">
+
+    <meta name="theme-color"
+          content="#4a148c">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+
+            <h1>📚 Biblioteca Digital</h1>
+
+        </div>
+
+        <div class="buscador">
+
+            <input
+                type="text"
+                id="buscador"
+                placeholder="Buscar libros o autores...">
+
+        </div>
+
+        <div class="acciones-header">
+
+            <button id="modoOscuro">
+
+                🌙
+
+            </button>
+
+            <div class="favoritos-btn">
+
+                ❤️ <span id="contador-favoritos">0</span>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="banner">
+
+        <div class="banner-contenido">
+
+            <h2>
+                Descubre miles de historias
+            </h2>
+
+            <p>
+                Lee, aprende y explora nuevos mundos
+            </p>
+
+            <button id="btn-libros">
+
+                Ver Libros
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <section class="estadisticas">
+
+        <div class="estadistica">
+
+            📚 Libros:
+            <span id="total-libros">0</span>
+
+        </div>
+
+        <div class="estadistica">
+
+            ❤️ Favoritos:
+            <span id="total-favoritos">0</span>
+
+        </div>
+
+    </section>
+
+    <section class="categorias">
+
+        <h2>Categorías</h2>
+
+        <div class="contenedor-categorias">
+
+            <div class="categoria"
+                 data-categoria="Novela">
+
+                📖 Novela
+
+            </div>
+
+            <div class="categoria"
+                 data-categoria="Literatura">
+
+                🎭 Literatura
+
+            </div>
+
+            <div class="categoria"
+                 data-categoria="Historia">
+
+                📜 Historia
+
+            </div>
+
+            <div class="categoria"
+                 data-categoria="Todos">
+
+                📚 Todos
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="libros">
+
+        <h2>Libros Destacados</h2>
+
+        <div
+            class="contenedor-libros"
+            id="contenedor-libros">
+
+        </div>
+
+    </section>
+
+    <div
+        id="panel-favoritos"
+        class="panel-favoritos">
+
+        <div class="favoritos-header">
+
+            <h2>❤️ Mis Favoritos</h2>
+
+            <button id="cerrar-favoritos">
+
+                ✖
+
+            </button>
+
+        </div>
+
+        <div id="lista-favoritos"></div>
+
+    </div>
+
+    <div
+        id="modal-libro"
+        class="modal">
+
+        <div class="modal-contenido">
+
+            <span id="cerrar-modal">
+
+                ✖
+
+            </span>
+
+            <img
+                id="modal-imagen"
+                src=""
+                alt="Portada">
+
+            <h2 id="modal-titulo"></h2>
+
+            <p id="modal-autor"></p>
+
+            <p id="modal-categoria"></p>
+
+            <p id="modal-anio"></p>
+
+            <p id="modal-descripcion"></p>
+
+        </div>
+
+    </div>
+
+    <section class="contacto">
+
+        <h2>Contáctanos</h2>
+
+        <div class="contacto-card">
+
+            <p>
+                📱 WhatsApp:
+                7502-8827
+            </p>
+
+            <p>
+                ✉️ Correo:
+            </p>
+
+            <p class="correo">
+
+                miltonabdielperez22@gmail.com
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="creditos">
+
+        <p>
+
+            Desarrollado por:
+
+            <strong>
+
+                Milton Abdiel Pérez Gómez
+
+            </strong>
+
+        </p>
+
+        <p>
+
+            Bachillerato Técnico Vocacional
+            en Desarrollo de Software
+
+        </p>
+
+    </section>
+
+    <footer>
+
+        <p>
+
+            © 2026 Biblioteca Digital
+
+        </p>
+
+    </footer>
+
+    <script src="libros.js"></script>
+    <script src="favoritos.js"></script>
+    <script src="app.js"></script>
+
+    <script>
+
+        if ("serviceWorker" in navigator) {
+
+            window.addEventListener("load", () => {
+
+                navigator.serviceWorker
+                    .register("sw.js");
+
+            });
+
+        }
+
+    </script>
+
+</body>
+
+</html>
