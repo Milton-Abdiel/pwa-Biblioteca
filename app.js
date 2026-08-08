@@ -41,6 +41,14 @@ function mostrarLibros(listaLibros){
 
                 </button>
 
+                <button
+                    class="btn-leer"
+                    onclick="leerLibro(${libro.id})">
+
+                    📚 Leer Muestra
+
+                </button>
+
             </div>
 
         `;
@@ -185,6 +193,33 @@ function verDetalles(id){
 
 }
 
+function leerLibro(id){
+
+    const libro =
+    libros.find(
+        libro => libro.id === id
+    );
+
+    document
+    .getElementById(
+        "lectura-titulo"
+    ).textContent =
+    libro.titulo;
+
+    document
+    .getElementById(
+        "lectura-texto"
+    ).textContent =
+    libro.muestra;
+
+    document
+    .getElementById(
+        "modal-lectura"
+    ).style.display =
+    "flex";
+
+}
+
 document
 .getElementById(
     "cerrar-modal"
@@ -198,6 +233,24 @@ document
             "modal-libro"
         )
         .style.display = "none";
+
+    }
+);
+
+document
+.getElementById(
+    "cerrar-lectura"
+)
+.addEventListener(
+    "click",
+    () => {
+
+        document
+        .getElementById(
+            "modal-lectura"
+        )
+        .style.display =
+        "none";
 
     }
 );
